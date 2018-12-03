@@ -1,0 +1,13 @@
+package com.maple.demo.kotlinmvp.module.splash
+
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import com.maple.demo.kotlinmvp.R
+
+class SplashActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
+    }
+}
