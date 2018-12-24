@@ -1,4 +1,4 @@
-package com.maple.demo.kotlinmvp.module.splash
+package com.maple.demo.kotlinmvp
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
