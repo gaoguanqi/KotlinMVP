@@ -8,7 +8,7 @@ import android.net.NetworkInfo
 import android.net.wifi.WifiManager
 import android.provider.Settings
 import android.telephony.TelephonyManager
-import com.cxz.kotlin.baselibs.app.BaseApp
+import com.maple.demo.kotlinmvp.app.base.BaseApp
 import java.net.NetworkInterface
 import java.net.SocketException
 

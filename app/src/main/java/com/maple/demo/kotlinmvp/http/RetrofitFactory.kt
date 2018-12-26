@@ -1,6 +1,6 @@
 package com.maple.demo.kotlinmvp.http
-import com.cxz.kotlin.baselibs.app.BaseApp
 import com.maple.demo.kotlinmvp.BuildConfig
+import com.maple.demo.kotlinmvp.app.base.BaseApp
 import com.maple.demo.kotlinmvp.http.constant.HttpConstant
 import com.maple.demo.kotlinmvp.http.interceptor.CacheInterceptor
 import com.maple.demo.kotlinmvp.http.interceptor.HeaderInterceptor

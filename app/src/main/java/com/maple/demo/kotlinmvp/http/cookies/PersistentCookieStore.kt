@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.text.TextUtils
 import android.util.Log
-import com.cxz.kotlin.baselibs.app.BaseApp
+import com.maple.demo.kotlinmvp.app.base.BaseApp
 import okhttp3.Cookie
 import okhttp3.HttpUrl
 import java.io.*

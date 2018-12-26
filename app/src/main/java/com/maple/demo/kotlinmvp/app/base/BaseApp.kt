@@ -1,4 +1,4 @@
-package com.cxz.kotlin.baselibs.app
+package com.maple.demo.kotlinmvp.app.base
 
 import android.app.Activity
 import android.app.Application

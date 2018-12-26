@@ -1,6 +1,6 @@
 package com.maple.demo.kotlinmvp.http.interceptor
 
-import com.cxz.kotlin.baselibs.app.BaseApp
+import com.maple.demo.kotlinmvp.app.base.BaseApp
 import com.maple.demo.kotlinmvp.utils.NetWorkUtil
 import okhttp3.CacheControl
 import okhttp3.Interceptor

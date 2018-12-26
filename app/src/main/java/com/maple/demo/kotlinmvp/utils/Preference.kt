@@ -3,7 +3,7 @@ package com.maple.demo.kotlinmvp.utils
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
-import com.cxz.kotlin.baselibs.app.BaseApp
+import com.maple.demo.kotlinmvp.app.base.BaseApp
 import java.io.*
 import kotlin.reflect.KProperty
 
