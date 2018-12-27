@@ -10,4 +10,5 @@
 
 
     <color name="color_toolbar">#FF5722</color>
+    <color name="color_title">#FFFFFF</color>
 </resources>

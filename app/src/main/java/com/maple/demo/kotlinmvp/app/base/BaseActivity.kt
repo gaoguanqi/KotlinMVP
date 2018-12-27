@@ -81,7 +81,7 @@ abstract class BaseActivity : AppCompatActivity(), OnToolbarListener {
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
         super.onCreate(savedInstanceState)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT // 强制竖屏
-        setContentView(layoutResID())
+        onContentView()
         if(useStatusBar()){
             setStatusBarColor(this.resources.getColor(R.color.color_toolbar));
         }
@@ -91,8 +91,15 @@ abstract class BaseActivity : AppCompatActivity(), OnToolbarListener {
         if (useEventBus()) {
             EventBus.getDefault().register(this)
         }
+        initPresenter()
         initView()
         initData()
+    }
+
+    open fun initPresenter() {}
+
+    open fun onContentView() {
+        setContentView(layoutResID())
     }
 
     private fun setToolbar() {

@@ -24,7 +24,7 @@ abstract class BaseObserver<T : BaseBean>(view: IView? = null) : ResourceObserve
         super.onStart()
         mView?.showLoading()
         if (!NetWorkUtil.isConnected()) {
-            mView?.showDefaultMsg("当前网络不可用，请检查网络设置")
+            mView?.showToast("当前网络不可用，请检查网络设置")
             onComplete()
         }
     }
@@ -35,13 +35,13 @@ abstract class BaseObserver<T : BaseBean>(view: IView? = null) : ResourceObserve
             t.errorCode == ErrorStatus.TOKEN_INVAILD -> {
                 // Token 过期，重新登录
             }
-            else -> mView?.showDefaultMsg(t.errorMsg)
+            else -> mView?.showToast(t.errorMsg)
         }
     }
 
     override fun onError(t: Throwable) {
         mView?.hideLoading()
-        mView?.showError(ExceptionHandle.handleException(t))
+        mView?.showToast(ExceptionHandle.handleException(t))
     }
 
 }
