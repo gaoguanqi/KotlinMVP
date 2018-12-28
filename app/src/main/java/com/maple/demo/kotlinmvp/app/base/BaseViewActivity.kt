@@ -6,6 +6,7 @@ import com.classic.common.MultipleStatusView
 import com.maple.demo.kotlinmvp.R
 import com.maple.demo.kotlinmvp.app.base.mvp.IPresenter
 import com.maple.demo.kotlinmvp.app.base.mvp.IView
+import kotlinx.android.synthetic.main.layout_base.*
 
 /**
  * author: gaogq
@@ -20,6 +21,9 @@ abstract class BaseViewActivity <in V : IView, P : IPresenter<V>> : BaseActivity
         mMultipleStatusView?.showContent(layoutResID(), ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT))
         //设置重试视图点击事件
         mMultipleStatusView?.setOnRetryClickListener(this)
+        if(useToolbar()){
+            view_stub_title.inflate()
+        }
     }
 
     override fun onClick(v: View) {

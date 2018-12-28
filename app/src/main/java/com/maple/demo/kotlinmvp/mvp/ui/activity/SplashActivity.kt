@@ -1,5 +1,6 @@
 package com.maple.demo.kotlinmvp.mvp.ui.activity
 
+import android.content.Intent
 import com.maple.demo.kotlinmvp.R
 import com.maple.demo.kotlinmvp.app.base.BaseActivity
 
@@ -11,7 +12,8 @@ class SplashActivity : BaseActivity() {
 
     override fun initData() {
         super.initData()
-
+        startActivity(Intent(this,HomeActivity::class.java))
+        this.finish()
     }
 
 }
